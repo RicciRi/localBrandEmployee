@@ -68,18 +68,28 @@ curl -X POST -H 'Content-Type: text/csv' --data-binary @import.csv http://localh
 ```
 GET /api/employee
 GET /api/employee?page=1&limit=20
+
+Example in terminal: curl -X GET https://127.0.0.1:8000/api/employee?page=1&limit=100
+
 ```
 
 ### Get Specific Employee Details
 
 ```
 GET /api/employee/{emp_id}
+
+Example in terminal: curl -X GET https://127.0.0.1:8000/api/employee/133641
+
+
 ```
 
 ### Delete Employee
 
 ```
 DELETE /api/delete/employee/{emp_id}
+
+Example in terminal: curl -X DELETE https://127.0.0.1:8000/api/employee/133641
+
 ```
 
 ## Project Structure

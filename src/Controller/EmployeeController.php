@@ -47,7 +47,7 @@ class EmployeeController extends AbstractController
         return $this->json($employee, Response::HTTP_OK, [], ['groups' => 'employee:read']);
     }
 
-    #[Route('/delete/employee/{id}', name: 'employee_delete', methods: ['DELETE'])]
+    #[Route('/employee/{id}', name: 'employee_delete', methods: ['DELETE'])]
     public function delete(string $id): JsonResponse
     {
         $employee = $this->employeeRepository->findByEmpId($id);
