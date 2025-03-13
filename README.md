@@ -60,7 +60,7 @@ Content-Type: text/csv
 
 Example:
 ```bash
-curl -X POST -H 'Content-Type: text/csv' --data-binary @import.csv http://localhost:8000/api/employee
+curl -X POST -H 'Content-Type: text/csv' --data-binary @import.csv https://localhost:8000/api/employee
 ```
 
 ### Get List of All Employees
