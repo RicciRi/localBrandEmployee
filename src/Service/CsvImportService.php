@@ -192,10 +192,8 @@ class CsvImportService
         foreach ($dateFields as $csvField => $dbField) {
             if (isset($data[$columnMap[$csvField]])) {
                 try {
-                    // Cleaning the date string from unwanted characters
                     $dateStr = preg_replace('/[^0-9\/\-\.]/', '', $data[$columnMap[$csvField]]);
 
-                    // Trying to recognize date in different formats
                     $formats = [
                         'm/d/Y',   // 1/6/1967
                         'd/m/Y',   // 6/1/1967

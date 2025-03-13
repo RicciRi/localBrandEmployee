@@ -107,8 +107,6 @@ class Employee
     #[Groups(["employee:read"])]
     private ?string $userName = null;
 
-    // Геттеры и сеттеры
-
     public function getId(): ?int
     {
         return $this->id;
